@@ -16,8 +16,3 @@ provider "aws" {
   shared_credentials_files  = ["C:/Users/felip/.aws/credentials"]
   #profile = "terraform"
 }
-
-module "lambda"{
-    source = "./lambda/hello-world"
-    count = 0
-}
