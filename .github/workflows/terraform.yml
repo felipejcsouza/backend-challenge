@@ -129,6 +129,11 @@ jobs:
             body: output
           })
 
+
+    - name: Terraform Plan
+      id: apply
+      run: terraform apply -no-color
+
     - name: 'End results'
       shell: bash
       run: |
