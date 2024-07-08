@@ -5,7 +5,7 @@ terraform {
       version = "~> 4.16"
     }
   }
-  
+
   backend "s3" {
     bucket = "challengetfs3"
     key    = "terraform.tfstate"
@@ -17,7 +17,7 @@ terraform {
 
 
 provider "aws" {
-  region  = "sa-east-1"
-  shared_credentials_files  = ["C:/Users/felip/.aws/credentials"]
+  region                   = "sa-east-1"
+  shared_credentials_files = ["C:/Users/felip/.aws/credentials"]
   #profile = "terraform"
 }
