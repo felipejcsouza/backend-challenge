@@ -18,6 +18,6 @@ provider "aws" {
 }
 
 module "lambda"{
-    source = "./lambda"
+    source = "./lambda/hello-world"
     count = 0
 }
